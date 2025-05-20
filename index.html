@@ -5,10 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mesures Physiques - Aix Marseille Université</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .image-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .image-container {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 140%;
+      max-width: none;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .image-caption {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .centered-images {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .centered-images img {
+      width: 140%;
+      max-width: none;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
 
-<!-- Header -->
+<!-- Header pleine largeur -->
 <header>
   <div class="header-logos">
     <a href="https://iut.univ-amu.fr/fr/formations/bachelor-universitaire-de-technologie/but-mesures-physiques" target="_blank">
@@ -30,38 +71,40 @@
   </div>
 </header>
 
-<!-- Bandeau image -->
+<!-- Image bandeau pleine largeur -->
 <div class="bandeau-image">
   <img src="bandeau.jpg" alt="Image paysage">
 </div>
 
-<!-- Contenu principal -->
 <main>
-  <p>Voici des documents et images résumant l’avancement et la finalité du projet.</p>
+  <!-- Introduction texte -->
+  <p style="font-size: 20px; color: #000; margin-bottom: 30px;">
+    Voici des documents et images résumant l’avancement et la finalité du projet.
+  </p>
 
-  <!-- Ligne 1 : deux images avec légendes -->
-  <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
-    <div style="flex: 1; min-width: 45%; text-align: center;">
-      <img src="doc1.jpg" alt="Document 1" style="width: 120%; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
-      <p style="margin-top: 10px;">Constitution électrique d’une enceinte</p>
+  <!-- Ligne 1 : doc1 et doc2 -->
+  <div class="image-block">
+    <div class="image-container">
+      <img src="doc1.jpg" alt="Document 1">
+      <p class="image-caption">Constitution électrique d’une enceinte</p>
     </div>
-    <div style="flex: 1; min-width: 45%; text-align: center;">
-      <img src="doc2.jpg" alt="Document 2" style="width: 120%; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
-      <p style="margin-top: 10px;">Premier design de l’enceinte</p>
+    <div class="image-container">
+      <img src="doc2.jpg" alt="Document 2">
+      <p class="image-caption">Premier design de l’enceinte</p>
     </div>
   </div>
 
-  <!-- Titre centré style <h2> -->
-  <h2 style="text-align: center; margin-top: 60px;">Design final</h2>
+  <!-- Titre centré -->
+  <h2 style="text-align: center;">Design final</h2>
 
-  <!-- Ligne 2 : deux autres images centrées -->
-  <div style="display: flex; justify-content: center; gap: 40px; margin-top: 30px; flex-wrap: wrap;">
-    <img src="doc3.jpg" alt="Document 3" style="width: 45%; max-width: 400px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
-    <img src="doc4.jpg" alt="Document 4" style="width: 45%; max-width: 400px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+  <!-- Ligne 2 : doc3 et doc4 -->
+  <div class="centered-images">
+    <img src="doc3.jpg" alt="Document 3">
+    <img src="doc4.jpg" alt="Document 4">
   </div>
 </main>
 
-<!-- Pied de page -->
+<!-- Footer -->
 <footer>
   <div class="footer-links">
     <a href="#">Conditions d'utilisation</a> |
